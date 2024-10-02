@@ -7,33 +7,77 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Ryan Selser</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">More Info</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+    <div class="container">
+        <header>
+            <img src="headshot.jpg" alt="Your Headshot">
+            <h1>Ryan Selser</h1>
+            <p>CS @ UMD</p>
+        </header>
 
-
-        </nav>
-    </header>
-    <main>
-        <section id="about" class="intro">
-            <div class="photo">
-                <img src="headshot.jpg" alt="Picture of Ryan Selser">
-            </div>
-            <div class="about-me">
-                <h2>About Me</h2>
-                <p></p>
-            </div>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Undergraduate student at the University of Maryland. Pursuing a BS in Computer Science. Member of the Honors College.</p>
+                <p>Relevant Skills: Java, Python, html, C, Ocaml, Rust, Unix, SQLite, Git</p>
+            
         </section>
 
-        <section id="experience" class="experience">
+        <section id="experience">
             <h2>Experience</h2>
-            <p></p>
+            <ul class="experience">
+                <li>
+                    <h3>Farm Worker</h3>
+                    <p class="role">Chesapeake Nursuries Inc. | May 2019 - Sep 2019</p>
+                    <p><li>Worked in teams to manage the location of plants and facilitate their movement for sale</li>
+                       <li>Carefully executed potting and clipping for maximum propagation yield</li></p>
+                </li>
+                <li>
+                    <h3>Head Busser</h3>
+                    <p class="role">Fratellis Italian Restaurant | June 2020 - Aug 2023</p>
+                    <p><li>Trained and managed 10 new bussers, guided new employees to successfully work up to company standards </li>
+                       <li>Simultaneously maintained 50 tables, 100s of glasses, and multiple soda machines ensuring quality and good customer experience</li>
+                       <li>consistently led teams of bussers during busy evenings, ensuring cleanliness and quality for customers</li></p>
+                </li>
+                <li>
+                    <h3>CDL Transit Operator</h3>
+                    <p class="role">Shuttle-UM | Oct 2023 - Present</p>
+                    <p>	<li>Trained to perform daily pre-trip safety inspections to ensure safe operation of vehicles</li>
+                        <li>Performs consistent passenger route service, ensuring safe and smooth service for riders</li>
+                        <li> Maintains communication with dispatch and other drivers to coordinate changes in service, and completes necessary refueling and cleaning at conclusion of daily service</li>
+                        <li>Certifications: Maryland CDL Class-B (Passenger and Airbrake Endorsements)</li>
+                        </p>
+                </li>
+            </ul>
         </section>
-    </main>
+        <section id="Projects"></section>
+            <h2>Projects</h2>
+            <ul class="projects">
+                <li>
+                    <h3>Home Run Visualizer</h3>
+                    <p class="skills">Python, NumPy, SciPy, PyBaseball</p>
+                    <p><li>Utilized the PyBaseball library to import MLB StatCast data regarding the launch angle and exit velocity of home runs hit, extracted necessary data from the resulting CSV file</li>
+                       <li>Used NumPy/SciPy to perform necessary calculations using the launch angle and exit velocity to calculate the distance of each home run if hit under neutral wind conditions</li>
+                       <li>Imported these calculations and the actual distance of each home run to create a scatter plot, highlighting the extremes of exit velocity and launch angle.</li>
+                    </p>
+                </li>
+                <li>
+                    <h3>Tabletop Game Engine</h3>
+                    <p class="skills">Java, JavaFX, I/O</p>
+                    <p><li>Developed object-oriented models for each game (e.g., Blackjack, Poker, Soulette), including card shuffling, betting, and turn-based actions </li>
+                       <li>Utilized JavaFX to create interactive and intuitive UIs with visual representations of cards, game boards, and betting areas, ensuring responsive user interactions</li>
+                       <li>Integrated file I/O for saving and loading game progress, as well as tracking player statistics and high scores</li></p>
+                </li>
+                <li>
+                    <h3>Java Graph/Algorith Solver</h3>
+                    <p class="skills">Java, JavaFX</p>
+                    <p>	<li>Developed a Java-based application that performs Depth-First Search (DFS), Breadth-First Search (BFS), and Dijkstra’s Algorithm on weighted graphs to find paths and shortest routes</li>
+                        <li>Provides a GUI where users can vary graph density (number of nodes and edges) and visualize real-time algorithm execution</li>
+                        <li> Visual representation of graph traversal and pathfinding, allowing users to observe how different algorithms explore and find routes in weighted graphs</li>
+                        </p>
+                </li>
+            </ul>
+        </section>
+
+    </div>
 </body>
 </html>
